@@ -6,35 +6,37 @@
 -->
 <html>
 	<head>
-	    <style>
-        {% comment %} /* Estilo para el logo */
-        .logo-esquina {
-            position: fixed; /* Fija el logo en la pantalla */
-            top: 50px;      /* Distancia desde arriba */
-            left: 10px;     /* Distancia desde la izquierda */
-            width: 50px;    /* Ancho pequeño */
-            height: auto;   /* Altura proporcional */
-            z-index: 1000;  /* Asegura que esté sobre otros elementos */
-        } {% endcomment %}
-		</style>
 		<title>Consultoria & Proyecto VGC SRL</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="icon" href="images/favicon.ico" type="image/x-icon">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			/* Estilos para el logo */
+			.header-logo {
+				height: 2.5em; /* Ajusta según necesites */
+				vertical-align: middle;
+				margin-right: 0.5em;
+			}
+			.logo {
+				display: inline-flex;
+				align-items: center;
+			}
+		</style>
 	</head>
 	<body class="is-preload">
-
-			<div id="wrapper">
-
-				<!-- Header -->
-					<header id="header" class="alt">
-								<a href="index.html" class="logo"> <strong>VGC SRL</strong> <span>Consultoria & Proyecto</span></a>
-						<nav>
-							<a href="#menu">Menu</a>
-						</nav>
-					</header>
+		<div id="wrapper">
+			<!-- Header -->
+			<header id="header" class="alt">
+				<a href="index.html" class="logo">
+					<img src="images/LOGO1-2.png" alt="Logo VGC" class="header-logo">
+					<strong>VGC SRL</strong> <span>Consultoria & Proyecto</span>
+				</a>
+				<nav>
+					<a href="#menu">Menu</a>
+				</nav>
+			</header>
 
 				<!-- Menu -->
 					<nav id="menu">
@@ -45,7 +47,7 @@
 							<li><a href="elements.html">Materias legales</a></li>
 						</ul>
 						<ul class="actions stacked">
-							<li><a href="#" class="button primary fit">Get Started</a></li>
+							<li><a href="#" class="button primary fit">COMENZAR</a></li>
 						</ul>
 					</nav>
 
@@ -54,12 +56,12 @@
 						<div class="inner">
 							<header class="major">
 								<h1>Bienvenido a Consultoria & Proyecto VGC SRL</h1>
-							</header>
+							</header> 
 							<div class="content">
 								<p>Design & Performance
 									Consultores al servicio del ente público y privado</p>
 								<ul class="actions">
-									<li><a href="#one" class="button next scrolly">Get Started</a></li>
+									<li><a href="#one" class="button next scrolly">COMENZAR</a></li>
 								</ul>
 							</div>
 						</div>
@@ -69,63 +71,248 @@
 					<div id="main">
 
 						<!-- One -->
-							<section id="one" class="tiles">
-								<article>
-									<span class="image">
-										<img src="images/pic01.jpg" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="landing.html" class="link">Proyectos</a></h3>
-										<p>Asesoramiento legal publico y privado</p>
-									</header>
-								</article>
-								<article>
-									<span class="image">
-										<img src="images/pic02.jpg" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="landing.html" class="link">Empresa</a></h3>
-										<p>Design & Performance</p>
-									</header>
-								</article>
-								<article>
-									<span class="image">
-										<img src="images/pic03.jpg" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="landing.html" class="link">Sobre nosotros</a></h3>
-										<p>Nos caracterizamos por la seriedad, la ética y la pasión por el servicio</p>
-									</header>
-								</article>
-								<article>
-									<span class="image">
-										<img src="images/pic04.jpg" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="generic.html" class="link">Servicios</a></h3>
-										<p>Todo sobre nuestros servicios</p>
-									</header>
-								</article>
-								<article>
-									<span class="image">
-										<img src="images/pic05.jpg" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="landing.html" class="link">Asesoria legal</a></h3>
-										<p>trabajo legal y responsable.</p>
-									</header>
-								</article>
-								<article>
-									<span class="image">
-										<img src="images/pic06.jpg" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="elements.html" class="link">Materias legales</a></h3>
-										<p>Nuestras artes</p>
-									</header>
-								</article>
-							</section>
+						<section id="one" class="auto-carousel">
+						<div class="carousel-container">
+							<article class="carousel-item">
+								<span class="image">
+									<img src="images/LOGO1-2.png" alt="" />
+								</span>
+								<header class="major">
+									<h3><a href="landing.html" class="link">Proyectos</a></h3>
+									<p>Asesoramiento legal publico y privado</p>
+								</header>
+							</article>
+							<article class="carousel-item">
+								<span class="image">
+									<img src="images/BANN-02.jpg" alt="" />
+								</span>
+								<header class="major">
+									<h3><a href="landing.html" class="link">Empresa</a></h3>
+									<p>Design & Performance</p>
+								</header>
+							</article>
+							<article class="carousel-item">
+								<span class="image">
+									<img src="images/new.jpg" alt="" />
+								</span>
+								<header class="major">
+									<h3><a href="landing.html" class="link">Sobre nosotros</a></h3>
+									<p> Seriedad, ética y la pasión por el servicio</p>
+								</header>
+							</article>
+							<article class="carousel-item">
+								<span class="image">
+									<img src="images/bannerBASE.jpg" alt="" />
+								</span>
+								<header class="major">
+									<h3><a href="generic.html" class="link">Servicios</a></h3>
+									<p>Todo sobre nuestros servicios</p>
+								</header>
+							</article>
+							<article class="carousel-item">
+								<span class="image">
+									<img src="images/asesorialegal.jpg" alt="" />
+								</span>
+								<header class="major">
+									<h3><a href="landing.html" class="link">Asesoria legal</a></h3>
+									<p>trabajo legal y responsable.</p>
+								</header>
+							</article>
+							<article class="carousel-item">
+								<span class="image">
+									<img src="images/materiaslegales.png" alt="" />
+								</span>
+								<header class="major">
+									<h3><a href="elements.html" class="link">Materias legales</a></h3>
+									<p>Nuestras artes</p>
+								</header>
+							</article>
+							<article class="carousel-item">
+								<span class="image">
+									<img src="images/servicioslegales.png" alt="" />
+								</span>
+								<header class="major">
+									<h3><a href="elements.html" class="link">Otros</a></h3>
+									<p>Nuestras artes</p>
+								</header>
+							</article>
+						</div>
+						<div class="carousel-controls">
+						</div>
+					</section>
 
+					<style>
+						.auto-carousel {
+							position: relative;
+							max-width: 100%;
+							overflow: hidden;
+							padding: 20px 0;
+						}
+						
+						.carousel-container {
+							display: flex;
+							transition: transform 0.5s ease;
+							gap: 20px;
+							padding: 0 20px;
+						}
+						
+						.carousel-item {
+							flex: 0 0 calc(33.333% - 20px);
+							min-width: 300px;
+							background: #242943;
+							border-radius: 8px;
+							box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+							padding: 20px;
+							transition: transform 0.3s ease;
+						}
+						
+						.carousel-item:hover {
+							transform: translateY(-5px);
+						}
+						
+						.carousel-item .image img {
+							width: 100%;
+							height: 180px;
+							object-fit: cover;
+							border-radius: 4px;
+						}
+						
+						.carousel-controls {
+							display: flex;
+							justify-content: center;
+							gap: 15px;
+							margin-top: 20px;
+						}
+						
+						.carousel-controls button {
+							background: #333;
+							color: #242943;
+							border: none;
+							border-radius: 50%;
+							width: 40px;
+							height: 40px;
+							font-size: 18px;
+							cursor: pointer;
+							transition: background 0.2s;
+						}
+						
+						.carousel-controls button:hover {
+							background:#242943;
+						}
+						
+						@media (max-width: 768px) {
+							.carousel-item {
+								flex: 0 0 calc(50% - 20px);
+							}
+						}
+						
+						@media (max-width: 480px) {
+							.carousel-item {
+								flex: 0 0 calc(100% - 20px);
+							}
+						}
+					</style>
+
+					<script>
+						document.addEventListener('DOMContentLoaded', function() {
+							const carousel = document.querySelector('.carousel-container');
+							const items = document.querySelectorAll('.carousel-item');
+							const prevBtn = document.querySelector('.carousel-prev');
+							const nextBtn = document.querySelector('.carousel-next');
+							const pauseBtn = document.querySelector('.carousel-pause');
+							
+							let currentIndex = 0;
+							let autoScroll = true;
+							let intervalId;
+							const itemWidth = items[0].offsetWidth + 20; // width + gap
+							
+							function updateCarousel() {
+								carousel.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+							}
+							
+						function nextSlide() {
+						// Solo clonar si estamos llegando al final y no hay clones ya
+						if(currentIndex >= items.length - 3 && !document.querySelector('.carousel-item.cloned')) {
+							const firstItem = items[0].cloneNode(true);
+							firstItem.classList.add('cloned');
+							carousel.appendChild(firstItem);
+							// Actualizar la lista de items
+							items = document.querySelectorAll('.carousel-item');
+						}
+						
+						currentIndex = (currentIndex + 1) % items.length;
+						updateCarousel();
+						
+						// Cuando llegue al final, haz un salto suave al principio
+						if(currentIndex === 0) {
+							setTimeout(() => {
+								// Eliminar el elemento clonado
+								const clonedItem = document.querySelector('.carousel-item.cloned');
+								if(clonedItem) {
+									carousel.removeChild(clonedItem);
+									// Actualizar la lista de items
+									items = document.querySelectorAll('.carousel-item');
+								}
+								
+								carousel.style.transition = 'none';
+								currentIndex = 0;
+								updateCarousel();
+								// Fuerza un reflow
+								void carousel.offsetWidth;
+								carousel.style.transition = 'transform 0.5s ease';
+							}, 500);
+						}
+					}
+							
+							function startAutoScroll() {
+								intervalId = setInterval(nextSlide, 3000);
+							}
+							
+							function stopAutoScroll() {
+								clearInterval(intervalId);
+							}
+							
+							// Iniciar auto scroll
+							startAutoScroll();
+							
+							// Controles manuales
+							nextBtn.addEventListener('click', () => {
+								stopAutoScroll();
+								nextSlide();
+								if(autoScroll) startAutoScroll();
+							});
+							
+							prevBtn.addEventListener('click', () => {
+								stopAutoScroll();
+								currentIndex = (currentIndex - 1 + items.length) % items.length;
+								updateCarousel();
+								if(autoScroll) startAutoScroll();
+							});
+							
+							pauseBtn.addEventListener('click', () => {
+								autoScroll = !autoScroll;
+								pauseBtn.textContent = autoScroll ? '❚❚' : '►';
+								
+								if(autoScroll) {
+									startAutoScroll();
+								} else {
+									stopAutoScroll();
+								}
+							});
+							
+							// Pausar al interactuar con el carrusel
+							carousel.addEventListener('mouseenter', stopAutoScroll);
+							carousel.addEventListener('mouseleave', () => {
+								if(autoScroll) startAutoScroll();
+							});
+							
+							// Adaptar al redimensionar la ventana
+							window.addEventListener('resize', () => {
+								itemWidth = items[0].offsetWidth + 20;
+								updateCarousel();
+							});
+						});
+					</script>
 						<!-- Two -->
 							<section id="two">
 								<div class="inner">
@@ -136,7 +323,7 @@
 									Nuestro equipo está conformado por profesionales altamente capacitados en múltiples disciplinas, lo que nos permite ofrecer un servicio versátil, eficiente y adaptado a las necesidades específicas de cada cliente. Ya sea en la gestión de proyectos, la asesoría legal, la organización de experiencias turísticas o la atención de otras ramas de servicios, en VGC SRL garantizamos compromiso, transparencia y resultados de alta calidad.
 									</p>
 									<ul class="actions">
-										<li><a href="landing.html" class="button next">Get Started</a></li>
+										<li><a href="landing.html" class="button next">COMENZAR</a></li>
 									</ul>
 								</div>
 							</section>
@@ -173,7 +360,7 @@
 									<div class="contact-method">
 										<span class="icon solid alt fa-envelope"></span>
 										<h3>Email</h3>
-										<a href="#">Servicios@corpjuridicagya.net</a>
+										<a href="https://outlook.live.com"  target="_blank">Servicios@corpjuridicagya.net</a>
 									</div>
 								</section>
 								<section>
@@ -189,7 +376,7 @@
 										<span class="icon solid alt fa-home"></span>
 										<h3>Direccion</h3>
 										<span>Mercedes Laura aguilar #35<br />
-										Distrito nacional, Santo domingo 11702<br />
+										Distrito Nacional, Santo domingo 11702<br />
 										Republica Dominicana</span>
 									</div>
 								</section>
@@ -201,7 +388,7 @@
 					<footer id="footer">
 						<div class="inner">
 							<ul class="icons">
-								<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon brands alt fa-twitter"><span class="label">X</span></a></li>
 								<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
 								<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
 								<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
