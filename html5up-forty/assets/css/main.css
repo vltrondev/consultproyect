@@ -3174,6 +3174,7 @@ input, select, textarea {
 			-ms-flex-grow: 1;
 			flex-grow: 1;
 			height: inherit;
+			align-items: center;
 			line-height: inherit;
 		}
 
@@ -4011,3 +4012,40 @@ input, select, textarea {
 .carrusel-prev:hover, .carrusel-next:hover {
 			background: rgba(0,0,0,0.8);
 }
+
+/* Añade esto al final de tu archivo assets/css/main.css */
+
+.language-switcher {
+	display: inline-block;
+	margin-right: 1em; /* Ajusta el espacio si es necesario */
+	font-size: 0.8em;  /* Igualamos al font-size del enlace del menú (0.8em relativo al header) */
+	line-height: normal; /* Usamos un line-height natural para el contenido del switcher */
+}
+
+.language-switcher a,
+.language-switcher .lang-active { /* Usaremos .lang-active para el idioma actual */
+	text-decoration: none;
+	border-bottom: none;
+	padding: 0.1em 0.3em;
+	color: inherit; /* Hereda el color del texto del encabezado */
+}
+
+.language-switcher .lang-active {
+	font-weight: bold; /* Hace que el idioma activo sea negrita */
+	cursor: default; /* Indica que no es clickeable */
+}
+
+.language-switcher a:hover {
+	text-decoration: underline; /* Subraya el idioma al pasar el mouse sobre él */
+}
+
+/* Ajustes específicos si el encabezado tiene la clase .alt (fondo oscuro) */
+#header.alt .language-switcher a,
+#header.alt .language-switcher .lang-active {
+	color: #ffffff; /* Texto blanco para encabezados oscuros */
+}
+
+#header.alt .language-switcher a:hover {
+	/* El text-decoration: underline ya se aplica, el color será blanco */
+}
+
